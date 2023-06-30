@@ -2,7 +2,7 @@
 The NASA Operational Simulator for Small Satellites (NOS3) is a suite of tools developed by NASA's Katherine Johnson Independent Verification and Validation (IV&V) Facility to aid in areas such as software development, integration & test (I&T), mission operations/training, verification, and validation (V&V), and software systems check-out. NOS3 provides a software development environment, a multi-target build system, an operator interface/ground station, dynamics and environment simulations, and software-based models of spacecraft hardware. 
 
 ## Documentation  
-To get started with NOS3, you can visit the official NOS3 website, [nos3.org](http://www.stf1.com/NOS3Website/Nos3MainTab.php), or the GitHub repository maintained by NASA.  
+To get started with NOS3, you can visit the official NOS3 website, [nos3.org](http://www.stf1.com/NOS3Website/Nos3MainTab.php), or the GitHub repository maintained by NASA, https://github.com/nasa/nos3.  
 
 ### Prerequisites  
 Each of the applications listed below is required prior to performing the installation procedure: 
@@ -47,7 +47,7 @@ Each of the applications listed below is required prior to performing the instal
 ## Reset  
 
 1. To exit the simulation, run `make stop` in the nos3 directory from the terminal  
-2. To build NOS3 from the repository baseline, first run `make clean` and then run `make launch`  
+2. To build NOS3 from the repository baseline, first run `make clean` and then run `make`  
 
 ### Directory Layout
 * `components` contains the repositories for the hardware component apps; each repository contains the app, an associated sim, and COSMOS command and telemetry tables
@@ -59,7 +59,7 @@ Each of the applications listed below is required prior to performing the instal
 	- /psp - platform support package (PSP), enables use on multiple types of boards
 	- /tools - standard cFS provided tools
 * `gsw` contains the nos3 ground station files, and other ground based tools
-	- /ait - Ammos Instrument Toolkit (Untested for 1.05.0)
+	- /ait - Ammos Instrument Toolkit (Untested)
 	- /cosmos - COSMOS files
 	- /OrbitInviewPowerPrediction - OIPP tool for operators
 	- /scripts - convenience scripts
